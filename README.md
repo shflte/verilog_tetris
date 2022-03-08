@@ -2,7 +2,7 @@
 
 * Tetris game implemented in verilog.
 
-![snapshot.JPeG](img/snapshot.JPeG)
+![snapshot.JPeG](https://github.com/shflte/verilog_tetris/blob/master/img/snapshot.JPeG)
 
 ## Deploy
 
@@ -16,11 +16,11 @@
 
   * The map picking stage.
 
-    ![pick_map.JPG](img/pick_map.JPG)
+    ![pick_map.JPG](https://github.com/shflte/verilog_tetris/blob/master/img/pick_map.jpg)
 
   * This map is created to demonstrate the beauty of the **Super Rotation System**.  The map spawns "T" tetrominos only and allows the "T" tetrominos to traverse through the map endlessly.
 
-    ![elevator.JPG](img/elevator.JPG) 
+    ![elevator.JPG](https://github.com/shflte/verilog_tetris/blob/master/img/elevator.jpg) 
 
 * **Scoring system**
 
@@ -32,11 +32,10 @@
 
 The game controls involves the bottons on the FPGA boards.
 
-![gameplay.JPG](img/gameplay.JPG)
+![gameplay.JPG](https://github.com/shflte/verilog_tetris/blob/master/img/gameplay.jpg)
 
 * **Shift left/right**: btn1/ btn0
 * **Soft drop**: btn2
 * **Hard drop**: btn3 + btn2
 * **Cloclwise/Anticlockwise rotate**: btn3 + btn1/ btn0
 * **Hold**: btn3
-
