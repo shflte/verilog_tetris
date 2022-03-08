@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Tetris.srcs/imports/LCD_module.v" \
+"../../../../Tetris.srcs/imports/clk_divider.v" \
+"../../../../Tetris.srcs/imports/debounce.v" \
+"../../../../Tetris.srcs/imports/sram.v" \
+"../../../../Tetris.srcs/imports/sram_buf.v" \
+"../../../../Tetris.srcs/imports/sram_number.v" \
+"../../../../Tetris.srcs/imports/vga_sync.v" \
+"../../../../Tetris.srcs/Main.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,86 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/LCD_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LCD_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/clk_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-311] analyzing module sram_next
+INFO: [VRFC 10-311] analyzing module sram_hold
+INFO: [VRFC 10-311] analyzing module sram_number0
+INFO: [VRFC 10-311] analyzing module sram_number1
+INFO: [VRFC 10-311] analyzing module sram_number2
+INFO: [VRFC 10-311] analyzing module sram_number3
+INFO: [VRFC 10-311] analyzing module sram_number4
+INFO: [VRFC 10-311] analyzing module sram_number5
+INFO: [VRFC 10-311] analyzing module sram_number6
+INFO: [VRFC 10-311] analyzing module sram_number7
+INFO: [VRFC 10-311] analyzing module sram_number8
+INFO: [VRFC 10-311] analyzing module sram_number9
+INFO: [VRFC 10-311] analyzing module sram_arrow_right
+INFO: [VRFC 10-311] analyzing module sram_arrow_left
+INFO: [VRFC 10-311] analyzing module sram_game_over
+INFO: [VRFC 10-311] analyzing module sram_score_picture
+INFO: [VRFC 10-311] analyzing module sram_illustration
+INFO: [VRFC 10-311] analyzing module sram_start
+INFO: [VRFC 10-311] analyzing module sram_pause
+INFO: [VRFC 10-311] analyzing module sram_pick_map
+INFO: [VRFC 10-311] analyzing module sram_double
+INFO: [VRFC 10-311] analyzing module sram_triple
+INFO: [VRFC 10-311] analyzing module sram_t_spin
+INFO: [VRFC 10-311] analyzing module sram_broad
+INFO: [VRFC 10-311] analyzing module sram1
+INFO: [VRFC 10-311] analyzing module sram_O
+INFO: [VRFC 10-311] analyzing module sram_I
+INFO: [VRFC 10-311] analyzing module sram_J
+INFO: [VRFC 10-311] analyzing module sram_L
+INFO: [VRFC 10-311] analyzing module sram_T
+INFO: [VRFC 10-311] analyzing module sram_S
+INFO: [VRFC 10-311] analyzing module sram_Z
+INFO: [VRFC 10-311] analyzing module sram_shadow
+INFO: [VRFC 10-311] analyzing module sram_next
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_next' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1582]
+INFO: [VRFC 10-311] analyzing module sram_holdword
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_Buf_I
+INFO: [VRFC 10-311] analyzing module sram_Buf_O
+INFO: [VRFC 10-311] analyzing module sram_Buf_L
+INFO: [VRFC 10-311] analyzing module sram_Buf_J
+INFO: [VRFC 10-311] analyzing module sram_Buf_T
+INFO: [VRFC 10-311] analyzing module sram_Buf_S
+INFO: [VRFC 10-311] analyzing module sram_Buf_Z
+INFO: [VRFC 10-311] analyzing module sram_start_pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_number0
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number0' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:1]
+INFO: [VRFC 10-311] analyzing module sram_number1
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number1' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:43]
+INFO: [VRFC 10-311] analyzing module sram_number2
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number2' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:85]
+INFO: [VRFC 10-311] analyzing module sram_number3
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number3' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:127]
+INFO: [VRFC 10-311] analyzing module sram_number4
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number4' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:169]
+INFO: [VRFC 10-311] analyzing module sram_number5
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number5' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:211]
+INFO: [VRFC 10-311] analyzing module sram_number6
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number6' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:253]
+INFO: [VRFC 10-311] analyzing module sram_number7
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number7' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:295]
+INFO: [VRFC 10-311] analyzing module sram_number8
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number8' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:337]
+INFO: [VRFC 10-311] analyzing module sram_number9
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'sram_number9' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:379]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2458] undeclared symbol sram_we, assumed default net type wire [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:416]
+INFO: [VRFC 10-2458] undeclared symbol LCD_E, assumed default net type wire [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:503]
+INFO: [VRFC 10-2458] undeclared symbol LCD_RS, assumed default net type wire [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:504]
+INFO: [VRFC 10-2458] undeclared symbol LCD_RW, assumed default net type wire [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:505]
+INFO: [VRFC 10-2458] undeclared symbol LCD_D, assumed default net type wire [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:506]
+WARNING: [VRFC 10-3380] identifier 'P' is used before its declaration [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SH/Desktop/Tetris/Tetris.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

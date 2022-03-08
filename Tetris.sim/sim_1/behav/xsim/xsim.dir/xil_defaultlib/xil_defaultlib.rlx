@@ -1,0 +1,13 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/SH/Desktop/Tetris/Tetris.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v,1646762002,verilog,,,,Main,,,,,,,,
+C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/LCD_module.v,1641274012,verilog,,C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/clk_divider.v,,LCD_module,,,,,,,,
+C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/clk_divider.v,1641272370,verilog,,C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/debounce.v,,clk_divider,,,,,,,,
+C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/debounce.v,1641272370,verilog,,C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v,,debounce,,,,,,,,
+C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v,1646761810,verilog,,C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v,,sram;sram1;sram_I;sram_J;sram_L;sram_O;sram_S;sram_T;sram_Z;sram_arrow_left;sram_arrow_right;sram_broad;sram_double;sram_game_over;sram_hold;sram_holdword;sram_illustration;sram_next;sram_pause;sram_pick_map;sram_score_picture;sram_shadow;sram_start;sram_t_spin;sram_triple,,,,,,,,
+C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v,1641801218,verilog,,C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v,,sram_Buf_I;sram_Buf_J;sram_Buf_L;sram_Buf_O;sram_Buf_S;sram_Buf_T;sram_Buf_Z;sram_start_pic,,,,,,,,
+C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v,1641671700,verilog,,C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/vga_sync.v,,sram_number0;sram_number1;sram_number2;sram_number3;sram_number4;sram_number5;sram_number6;sram_number7;sram_number8;sram_number9,,,,,,,,
+C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/vga_sync.v,1641272370,verilog,,C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v,,vga_sync,,,,,,,,

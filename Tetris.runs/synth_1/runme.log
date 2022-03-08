@@ -1,0 +1,924 @@
+
+*** Running vivado
+    with args -log Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source Main.tcl -notrace
+Command: synth_design -top Main -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15952
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_next [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1582]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number0 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:1]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number1 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:43]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number2 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:85]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number3 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:127]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number4 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:169]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number5 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:211]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number6 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:253]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number7 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:295]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number8 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:337]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sram_number9 [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:379]
+WARNING: [Synth 8-6901] identifier 'P' is used before its declaration [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:55]
+WARNING: [Synth 8-6901] identifier 'SPSR' is used before its declaration [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:55]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1118.969 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:24]
+INFO: [Synth 8-6157] synthesizing module 'sram_arrow_right' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:620]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 400 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'arror_right.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:637]
+INFO: [Synth 8-6155] done synthesizing module 'sram_arrow_right' (1#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:620]
+INFO: [Synth 8-6157] synthesizing module 'sram_arrow_left' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:669]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 400 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'arror_left.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:686]
+INFO: [Synth 8-6155] done synthesizing module 'sram_arrow_left' (2#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:669]
+INFO: [Synth 8-6157] synthesizing module 'sram_game_over' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:718]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 10000 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'game_over.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:735]
+INFO: [Synth 8-6155] done synthesizing module 'sram_game_over' (3#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:718]
+INFO: [Synth 8-6157] synthesizing module 'sram_score_picture' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:767]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 10000 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'score_picture.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:784]
+INFO: [Synth 8-6155] done synthesizing module 'sram_score_picture' (4#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:767]
+INFO: [Synth 8-6157] synthesizing module 'sram_start' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:865]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 6000 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'start.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:882]
+INFO: [Synth 8-6155] done synthesizing module 'sram_start' (5#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:865]
+INFO: [Synth 8-6157] synthesizing module 'sram_pause' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:914]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 5700 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'pause.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:931]
+INFO: [Synth 8-6155] done synthesizing module 'sram_pause' (6#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:914]
+INFO: [Synth 8-6157] synthesizing module 'sram_pick_map' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:963]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 2000 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'pick_map.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:980]
+INFO: [Synth 8-6155] done synthesizing module 'sram_pick_map' (7#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:963]
+INFO: [Synth 8-6157] synthesizing module 'sram_t_spin' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1110]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 1400 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 't_spin.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1127]
+INFO: [Synth 8-6155] done synthesizing module 'sram_t_spin' (8#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1110]
+INFO: [Synth 8-6157] synthesizing module 'sram_next' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1582]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 1400 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'next.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1599]
+INFO: [Synth 8-6155] done synthesizing module 'sram_next' (9#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1582]
+INFO: [Synth 8-6157] synthesizing module 'sram_holdword' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1624]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 1400 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'hold.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1641]
+INFO: [Synth 8-6155] done synthesizing module 'sram_holdword' (10#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1624]
+INFO: [Synth 8-6157] synthesizing module 'LCD_module' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/LCD_module.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_module' (11#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/LCD_module.v:13]
+WARNING: [Synth 8-689] width (1) of port connection 'LCD_D' does not match port width (4) of module 'LCD_module' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:506]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/debounce.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (12#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/debounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'sram1' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1203]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 22464 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'board.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1220]
+INFO: [Synth 8-6155] done synthesizing module 'sram1' (13#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1203]
+INFO: [Synth 8-6157] synthesizing module 'sram_I' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1287]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'grid_I.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1304]
+INFO: [Synth 8-6155] done synthesizing module 'sram_I' (14#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1287]
+INFO: [Synth 8-6157] synthesizing module 'sram_O' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1245]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'grid_O.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1262]
+INFO: [Synth 8-6155] done synthesizing module 'sram_O' (15#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1245]
+INFO: [Synth 8-6157] synthesizing module 'sram_L' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1371]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'grid_L.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1388]
+INFO: [Synth 8-6155] done synthesizing module 'sram_L' (16#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1371]
+INFO: [Synth 8-6157] synthesizing module 'sram_J' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1329]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'grid_J.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1346]
+INFO: [Synth 8-6155] done synthesizing module 'sram_J' (17#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1329]
+INFO: [Synth 8-6157] synthesizing module 'sram_T' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1413]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'grid_T.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1430]
+INFO: [Synth 8-6155] done synthesizing module 'sram_T' (18#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1413]
+INFO: [Synth 8-6157] synthesizing module 'sram_S' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1455]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'grid_S.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1472]
+INFO: [Synth 8-6155] done synthesizing module 'sram_S' (19#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1455]
+INFO: [Synth 8-6157] synthesizing module 'sram_Z' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1497]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'grid_Z.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1514]
+INFO: [Synth 8-6155] done synthesizing module 'sram_Z' (20#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'sram_shadow' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1539]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'shadow.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1556]
+INFO: [Synth 8-6155] done synthesizing module 'sram_shadow' (21#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram.v:1539]
+INFO: [Synth 8-6157] synthesizing module 'sram_Buf_I' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 600 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'I.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'sram_Buf_I' (22#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sram_Buf_O' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:43]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 600 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'O.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'sram_Buf_O' (23#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:43]
+INFO: [Synth 8-6157] synthesizing module 'sram_Buf_L' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:85]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 600 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'L.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'sram_Buf_L' (24#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:85]
+INFO: [Synth 8-6157] synthesizing module 'sram_Buf_J' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:127]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 600 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'J.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'sram_Buf_J' (25#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:127]
+INFO: [Synth 8-6157] synthesizing module 'sram_Buf_T' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:169]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 600 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'T.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'sram_Buf_T' (26#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:169]
+INFO: [Synth 8-6157] synthesizing module 'sram_Buf_S' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:211]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 600 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'S.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'sram_Buf_S' (27#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:211]
+INFO: [Synth 8-6157] synthesizing module 'sram_Buf_Z' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:253]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 600 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'Z.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:270]
+INFO: [Synth 8-6155] done synthesizing module 'sram_Buf_Z' (28#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:253]
+INFO: [Synth 8-6157] synthesizing module 'sram_number0' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:1]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_0.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number0' (29#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sram_number1' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:43]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_1.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number1' (30#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:43]
+INFO: [Synth 8-6157] synthesizing module 'sram_number2' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:85]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_2.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number2' (31#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:85]
+INFO: [Synth 8-6157] synthesizing module 'sram_number3' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:127]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_3.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number3' (32#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:127]
+INFO: [Synth 8-6157] synthesizing module 'sram_number4' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:169]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_4.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number4' (33#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:169]
+INFO: [Synth 8-6157] synthesizing module 'sram_number5' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:211]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_5.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number5' (34#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:211]
+INFO: [Synth 8-6157] synthesizing module 'sram_number6' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:253]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_6.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:270]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number6' (35#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:253]
+INFO: [Synth 8-6157] synthesizing module 'sram_number7' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:295]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_7.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:312]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number7' (36#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:295]
+INFO: [Synth 8-6157] synthesizing module 'sram_number8' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:337]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_8.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:354]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number8' (37#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:337]
+INFO: [Synth 8-6157] synthesizing module 'sram_number9' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:379]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 42 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'number_9.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:396]
+INFO: [Synth 8-6155] done synthesizing module 'sram_number9' (38#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_number.v:379]
+INFO: [Synth 8-6157] synthesizing module 'sram_start_pic' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:295]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+	Parameter RAM_SIZE bound to: 9750 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '1215.mem' is read successfully [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:312]
+INFO: [Synth 8-6155] done synthesizing module 'sram_start_pic' (39#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/sram_buf.v:295]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/vga_sync.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (40#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/vga_sync.v:19]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/clk_divider.v:21]
+	Parameter divider bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (41#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/imports/clk_divider.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1565]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1735]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1949]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:2194]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:2348]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:2507]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:3069]
+WARNING: [Synth 8-567] referenced signal 'scorebroad' should be on the sensitivity list [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:3692]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (42#1) [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1710.855 ; gain = 591.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1710.855 ; gain = 591.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1710.855 ; gain = 591.887
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.568 . Memory (MB): peak = 1710.855 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SH/Desktop/Tetris/Tetris.srcs/constrs_1/new/tetris.xdc]
+Finished Parsing XDC File [C:/Users/SH/Desktop/Tetris/Tetris.srcs/constrs_1/new/tetris.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SH/Desktop/Tetris/Tetris.srcs/constrs_1/new/tetris.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1710.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1710.855 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1710.855 ; gain = 591.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 1710.855 ; gain = 591.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 8     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 5     
+	   3 Input   18 Bit       Adders := 8     
+	   2 Input   18 Bit       Adders := 8     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 25    
+	   2 Input    9 Bit       Adders := 16    
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 86    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               18 Bit    Registers := 5     
+	               17 Bit    Registers := 10    
+	               12 Bit    Registers := 39    
+	               10 Bit    Registers := 15    
+	                8 Bit    Registers := 7     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 355   
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 18    
++---Multipliers : 
+	              18x18  Multipliers := 2     
++---RAMs : 
+	             263K Bit	(22464 X 12 bit)          RAMs := 1     
+	             117K Bit	(10000 X 12 bit)          RAMs := 2     
+	             114K Bit	(9750 X 12 bit)          RAMs := 1     
+	              70K Bit	(6000 X 12 bit)          RAMs := 1     
+	              66K Bit	(5700 X 12 bit)          RAMs := 1     
+	              23K Bit	(2000 X 12 bit)          RAMs := 1     
+	              16K Bit	(1400 X 12 bit)          RAMs := 3     
+	               7K Bit	(600 X 12 bit)          RAMs := 7     
+	               4K Bit	(400 X 12 bit)          RAMs := 2     
+	               1K Bit	(100 X 12 bit)          RAMs := 8     
+	              504 Bit	(42 X 12 bit)          RAMs := 10    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   7 Input   30 Bit        Muxes := 1     
+	   6 Input   30 Bit        Muxes := 1     
+	   5 Input   30 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 4     
+	   4 Input   28 Bit        Muxes := 1     
+	   7 Input   28 Bit        Muxes := 1     
+	   4 Input   27 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 4     
+	   6 Input   24 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 85    
+	  10 Input   12 Bit        Muxes := 1     
+	   8 Input   12 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 22    
+	   2 Input   10 Bit        Muxes := 82    
+	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1213  
+	   7 Input    4 Bit        Muxes := 29    
+	  13 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 266   
+	   3 Input    4 Bit        Muxes := 104   
+	   4 Input    4 Bit        Muxes := 120   
+	   6 Input    4 Bit        Muxes := 22    
+	   9 Input    4 Bit        Muxes := 5     
+	   8 Input    4 Bit        Muxes := 8     
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 10    
+	 105 Input    3 Bit        Muxes := 9     
+	  12 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 2     
+	   9 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 11    
+	   5 Input    2 Bit        Muxes := 7     
+	   2 Input    2 Bit        Muxes := 13    
+	   6 Input    2 Bit        Muxes := 2     
+	   7 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 51    
+	   2 Input    1 Bit        Muxes := 337   
+	   5 Input    1 Bit        Muxes := 265   
+	   6 Input    1 Bit        Muxes := 10    
+	   8 Input    1 Bit        Muxes := 52    
+	  16 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 4     
+	  13 Input    1 Bit        Muxes := 2     
+	  69 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'current_tetromino_grid_reg[3][9:0]' into 'current_tetromino_grid_reg[3][9:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1569]
+INFO: [Synth 8-4471] merging register 'current_tetromino_grid_reg[2][9:0]' into 'current_tetromino_grid_reg[2][9:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1569]
+INFO: [Synth 8-4471] merging register 'deviation_reg[4:0]' into 'deviation_reg[4:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1727]
+INFO: [Synth 8-4471] merging register 'deviation_reg[4:0]' into 'deviation_reg[4:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1727]
+INFO: [Synth 8-4471] merging register 'deviation_reg[4:0]' into 'deviation_reg[4:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1727]
+INFO: [Synth 8-4471] merging register 'deviation_reg[4:0]' into 'deviation_reg[4:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1727]
+INFO: [Synth 8-4471] merging register 'deviation_reg[4:0]' into 'deviation_reg[4:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1727]
+INFO: [Synth 8-4471] merging register 'deviation_reg[4:0]' into 'deviation_reg[4:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1727]
+INFO: [Synth 8-4471] merging register 'current_tetromino_grid_reg[1][9:0]' into 'current_tetromino_grid_reg[1][9:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1569]
+WARNING: [Synth 8-3936] Found unconnected internal register 'current_tetromino_grid_reg[0]' and it is trimmed from '10' to '9' bits. [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1569]
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][9]__0' (FDE) to 'current_tetromino_grid_reg[3][9]'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][9]__0' (FDE) to 'current_tetromino_grid_reg[2][9]'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][9]__0' (FDE) to 'current_tetromino_grid_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][0]' (FDE) to 'current_tetromino_grid_reg[3][0]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][1]' (FDE) to 'current_tetromino_grid_reg[3][1]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][2]' (FDE) to 'current_tetromino_grid_reg[3][2]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][3]' (FDE) to 'current_tetromino_grid_reg[3][3]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][4]' (FDE) to 'current_tetromino_grid_reg[3][4]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][5]' (FDE) to 'current_tetromino_grid_reg[3][5]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][6]' (FDE) to 'current_tetromino_grid_reg[3][6]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][7]' (FDE) to 'current_tetromino_grid_reg[3][7]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[3][8]' (FDE) to 'current_tetromino_grid_reg[3][8]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][0]' (FDE) to 'current_tetromino_grid_reg[1][0]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][1]' (FDE) to 'current_tetromino_grid_reg[1][1]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][2]' (FDE) to 'current_tetromino_grid_reg[1][2]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][3]' (FDE) to 'current_tetromino_grid_reg[1][3]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][4]' (FDE) to 'current_tetromino_grid_reg[1][4]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][5]' (FDE) to 'current_tetromino_grid_reg[1][5]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][6]' (FDE) to 'current_tetromino_grid_reg[1][6]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][7]' (FDE) to 'current_tetromino_grid_reg[1][7]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[1][8]' (FDE) to 'current_tetromino_grid_reg[1][8]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][0]' (FDE) to 'current_tetromino_grid_reg[2][0]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][1]' (FDE) to 'current_tetromino_grid_reg[2][1]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][2]' (FDE) to 'current_tetromino_grid_reg[2][2]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][3]' (FDE) to 'current_tetromino_grid_reg[2][3]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][4]' (FDE) to 'current_tetromino_grid_reg[2][4]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][5]' (FDE) to 'current_tetromino_grid_reg[2][5]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][6]' (FDE) to 'current_tetromino_grid_reg[2][6]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][7]' (FDE) to 'current_tetromino_grid_reg[2][7]__0'
+INFO: [Synth 8-3886] merging instance 'current_tetromino_grid_reg[2][8]' (FDE) to 'current_tetromino_grid_reg[2][8]__0'
+INFO: [Synth 8-5546] ROM "text_rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "text_rw" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'deviation_reg[4:0]' into 'deviation_reg[4:0]' [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1727]
+WARNING: [Synth 8-6014] Unused sequential element pause/RAM_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element start/RAM_reg was removed. 
+WARNING: [Synth 8-3936] Found unconnected internal register 'pixel_addr_hold_reg' and it is trimmed from '17' to '10' bits. [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:826]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tetro_list_reg[5]' and it is trimmed from '8' to '4' bits. [C:/Users/SH/Desktop/Tetris/Tetris.srcs/Main.v:1313]
+DSP Report: Generating DSP pixel_addr_score_picture0, operation Mode is: C+A*(B:0x64).
+DSP Report: operator pixel_addr_score_picture0 is absorbed into DSP pixel_addr_score_picture0.
+DSP Report: operator pixel_addr_score_picture1 is absorbed into DSP pixel_addr_score_picture0.
+INFO: [Synth 8-7082] The signal number0/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number1/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number2/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number3/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number4/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number5/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number6/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number7/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number8/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number9/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+DSP Report: Generating DSP pixel_addr_game_over1, operation Mode is: A*(B:0x64).
+DSP Report: operator pixel_addr_game_over1 is absorbed into DSP pixel_addr_game_over1.
+DSP Report: Generating DSP pixel_addr_start_pic1, operation Mode is: (D+(A:0x3fffffbf))*(B:0x96).
+DSP Report: operator pixel_addr_start_pic1 is absorbed into DSP pixel_addr_start_pic1.
+DSP Report: operator pixel_addr_start_pic2 is absorbed into DSP pixel_addr_start_pic1.
+DSP Report: Generating DSP pixel_addr_start_pic_reg, operation Mode is: (PCIN+(A:0x0):B+C)'.
+DSP Report: register pixel_addr_start_pic_reg is absorbed into DSP pixel_addr_start_pic_reg.
+DSP Report: operator pixel_addr_start_pic0 is absorbed into DSP pixel_addr_start_pic_reg.
+DSP Report: Generating DSP pixel_addr_marquee1, operation Mode is: (D+(A:0x3fffff6a))*(B:0x1e).
+DSP Report: operator pixel_addr_marquee1 is absorbed into DSP pixel_addr_marquee1.
+DSP Report: operator pixel_addr_marquee2 is absorbed into DSP pixel_addr_marquee1.
+DSP Report: Generating DSP pixel_addr_marquee_reg, operation Mode is: (PCIN+(A:0x0):B+C)'.
+DSP Report: register pixel_addr_marquee_reg is absorbed into DSP pixel_addr_marquee_reg.
+DSP Report: operator pixel_addr_marquee0 is absorbed into DSP pixel_addr_marquee_reg.
+DSP Report: Generating DSP pixel_addr1_reg, operation Mode is: C+A*(B:0x6c).
+DSP Report: register pixel_addr1_reg is absorbed into DSP pixel_addr1_reg.
+DSP Report: operator pixel_addr10 is absorbed into DSP pixel_addr1_reg.
+DSP Report: operator pixel_addr11 is absorbed into DSP pixel_addr1_reg.
+DSP Report: Generating DSP pixel_addr_arrow_right1, operation Mode is: A*(B:0x14).
+DSP Report: operator pixel_addr_arrow_right1 is absorbed into DSP pixel_addr_arrow_right1.
+DSP Report: Generating DSP pixel_addr_next1, operation Mode is: A*(B:0x46).
+DSP Report: operator pixel_addr_next1 is absorbed into DSP pixel_addr_next1.
+DSP Report: Generating DSP pixel_addr_t_spin1, operation Mode is: (D+(A:0x3fffff4c))*(B:0x46).
+DSP Report: operator pixel_addr_t_spin1 is absorbed into DSP pixel_addr_t_spin1.
+DSP Report: operator pixel_addr_t_spin2 is absorbed into DSP pixel_addr_t_spin1.
+DSP Report: Generating DSP pixel_addr_t_spin_reg, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffffb).
+DSP Report: register pixel_addr_t_spin_reg is absorbed into DSP pixel_addr_t_spin_reg.
+DSP Report: operator pixel_addr_t_spin0 is absorbed into DSP pixel_addr_t_spin_reg.
+INFO: [Synth 8-7082] The signal number0/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number1/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number2/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number3/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number4/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number5/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number6/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number7/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number8/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal number9/RAM_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-3886] merging instance 'row_A_reg[127]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[123]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[122]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[119]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[115]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[113]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[112]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[111]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[108]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[107]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[106]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[105]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[103]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[99]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[97]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[96]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[95]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[92]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[91]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[89]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[87]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[86]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[82]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[80]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[79]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[78]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[76]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[75]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[74]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[73]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[72]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[63]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[62]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[60]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[59]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[58]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[57]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[56]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[55]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[54]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[52]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[51]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[50]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[49]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[48]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[47]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[46]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[44]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[43]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[42]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[41]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[40]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[39]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[38]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[36]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[35]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[34]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[33]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[32]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[31]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[30]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[28]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[27]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[26]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[25]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[24]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[23]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[22]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[20]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'row_A_reg[19]' (FDR) to 'score_picture_VPOS_reg[9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\number_VPOS_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\number_VPOS_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tetro_list_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tetro_list_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tetro_list_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tetro_list_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\marquee_idx_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tetromino_next_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\current_tetromino_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\P_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\speed_num_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\speed_num_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\marquee_list_reg[4][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\marquee_list_reg[4][3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:02:36 . Memory (MB): peak = 1710.855 ; gain = 591.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Main__GB4   | ram_start_pic/RAM_reg | 9 K x 12(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 6      | 
+|Main__GB4   | ram1/RAM_reg          | 21 K x 12(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 12     | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------+-----------+----------------------+------------------------------------------------------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives                                                 | 
++------------+-----------------------+-----------+----------------------+------------------------------------------------------------+
+|Main        | score_picture/RAM_reg | Implied   | 16 K x 12            | RAM16X1S x 12 RAM256X1S x 468                              | 
+|Main        | number0/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number1/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number2/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number3/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number4/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number5/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number6/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number7/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number8/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number9/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | game_over/RAM_reg     | Implied   | 16 K x 12            | RAM16X1S x 12 RAM256X1S x 468                              | 
+|Main        | ram_Buf_I/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_O/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_L/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_J/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_T/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_S/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_Z/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_shadow/RAM_reg    | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_Z/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_S/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_T/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_J/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_L/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_O/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_I/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | pick_map/RAM_reg      | Implied   | 2 K x 12             | RAM16X1S x 12 RAM64X1S x 12 RAM128X1S x 12 RAM256X1S x 84  | 
+|Main        | arrow_right/RAM_reg   | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                | 
+|Main        | arrow_left/RAM_reg    | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                | 
+|Main        | holdword/RAM_reg      | Implied   | 2 K x 12             | RAM16X1S x 24 RAM32X1S x 12 RAM64X1S x 12 RAM256X1S x 60   | 
+|Main        | next/RAM_reg          | Implied   | 2 K x 12             | RAM16X1S x 24 RAM32X1S x 12 RAM64X1S x 12 RAM256X1S x 60   | 
+|Main        | t_spin/RAM_reg        | Implied   | 2 K x 12             | RAM16X1S x 24 RAM32X1S x 12 RAM64X1S x 12 RAM256X1S x 60   | 
++------------+-----------------------+-----------+----------------------+------------------------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below)
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Main        | C+A*(B:0x64)                      | 17     | 7      | 9      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Main        | A*(B:0x64)                        | 17     | 7      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Main        | (D+(A:0x3fffffbf))*(B:0x96)       | 17     | 8      | -      | 9      | 25     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|Main        | (PCIN+(A:0x0):B+C)'               | 30     | 8      | 17     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|Main        | (D+(A:0x3fffff6a))*(B:0x1e)       | 18     | 5      | -      | 9      | 23     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|Main        | (PCIN+(A:0x0):B+C)'               | 30     | 5      | 18     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|Main        | C+A*(B:0x6c)                      | 18     | 7      | 18     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|Main        | A*(B:0x14)                        | 17     | 5      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Main        | A*(B:0x46)                        | 17     | 7      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Main        | (D+(A:0x3fffff4c))*(B:0x46)       | 17     | 7      | -      | 9      | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|Main        | PCIN+(A:0x0):B+(C:0xfffffffffffb) | 30     | 9      | 4      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:44 ; elapsed = 00:02:48 . Memory (MB): peak = 1710.855 ; gain = 591.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:57 ; elapsed = 00:05:01 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Main__GB4   | ram_start_pic/RAM_reg | 9 K x 12(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 6      | 
+|Main__GB4   | ram1/RAM_reg          | 21 K x 12(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 12     | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------+-----------+----------------------+------------------------------------------------------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives                                                 | 
++------------+-----------------------+-----------+----------------------+------------------------------------------------------------+
+|Main        | score_picture/RAM_reg | Implied   | 16 K x 12            | RAM16X1S x 12 RAM256X1S x 468                              | 
+|Main        | number0/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number1/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number2/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number3/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number4/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number5/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number6/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number7/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number8/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | number9/RAM_reg       | Implied   | 64 x 12              | RAM16X1S x 12 RAM32X1S x 12                                | 
+|Main        | game_over/RAM_reg     | Implied   | 16 K x 12            | RAM16X1S x 12 RAM256X1S x 468                              | 
+|Main        | ram_Buf_I/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_O/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_L/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_J/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_T/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_S/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_Buf_Z/RAM_reg     | Implied   | 1 K x 12             | RAM16X1S x 24 RAM64X1S x 12 RAM256X1S x 24                 | 
+|Main        | ram_shadow/RAM_reg    | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_Z/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_S/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_T/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_J/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_L/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_O/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | ram_I/RAM_reg         | Implied   | 128 x 12             | RAM16X1S x 12 RAM32X1S x 12 RAM64X1S x 12                  | 
+|Main        | pick_map/RAM_reg      | Implied   | 2 K x 12             | RAM16X1S x 12 RAM64X1S x 12 RAM128X1S x 12 RAM256X1S x 84  | 
+|Main        | arrow_right/RAM_reg   | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                | 
+|Main        | arrow_left/RAM_reg    | Implied   | 512 x 12             | RAM16X1S x 12 RAM128X1S x 12 RAM256X1S x 12                | 
+|Main        | holdword/RAM_reg      | Implied   | 2 K x 12             | RAM16X1S x 24 RAM32X1S x 12 RAM64X1S x 12 RAM256X1S x 60   | 
+|Main        | next/RAM_reg          | Implied   | 2 K x 12             | RAM16X1S x 24 RAM32X1S x 12 RAM64X1S x 12 RAM256X1S x 60   | 
+|Main        | t_spin/RAM_reg        | Implied   | 2 K x 12             | RAM16X1S x 24 RAM32X1S x 12 RAM64X1S x 12 RAM256X1S x 60   | 
++------------+-----------------------+-----------+----------------------+------------------------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance i_0/ram_start_pic/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram_start_pic/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram_start_pic/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram_start_pic/RAM_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram_start_pic/RAM_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram_start_pic/RAM_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram1/RAM_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:10 ; elapsed = 00:05:37 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ram_start_pic/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_start_pic/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_start_pic/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_start_pic/RAM_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_start_pic/RAM_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_start_pic/RAM_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram1/RAM_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:19 ; elapsed = 00:05:47 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:19 ; elapsed = 00:05:47 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:23 ; elapsed = 00:05:51 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:23 ; elapsed = 00:05:51 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:25 ; elapsed = 00:05:53 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:25 ; elapsed = 00:05:53 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |   742|
+|3     |DSP48E1   |    11|
+|7     |LUT1      |   296|
+|8     |LUT2      |  1382|
+|9     |LUT3      |  3332|
+|10    |LUT4      |  1640|
+|11    |LUT5      |  3148|
+|12    |LUT6      | 12699|
+|13    |MUXF7     |  1591|
+|14    |MUXF8     |   347|
+|15    |RAM128X1S |    36|
+|16    |RAM16X1S  |   516|
+|17    |RAM256X1S |  1392|
+|18    |RAM32X1S  |   252|
+|19    |RAM64X1S  |   228|
+|20    |RAMB36E1  |    18|
+|34    |FDRE      |  2260|
+|35    |FDSE      |   174|
+|36    |IBUF      |     6|
+|37    |OBUF      |    18|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:25 ; elapsed = 00:05:53 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:33 ; elapsed = 00:05:46 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+Synthesis Optimization Complete : Time (s): cpu = 00:05:25 ; elapsed = 00:05:54 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.329 . Memory (MB): peak = 2492.969 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5133 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2492.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2424 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 36 instances
+  RAM16X1S => RAM32X1S (RAMS32): 516 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1392 instances
+  RAM32X1S => RAM32X1S (RAMS32): 252 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 228 instances
+
+Synth Design complete, checksum: 145a4a36
+INFO: [Common 17-83] Releasing license: Synthesis
+327 Infos, 9 Warnings, 11 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:37 ; elapsed = 00:06:11 . Memory (MB): peak = 2492.969 ; gain = 1374.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SH/Desktop/Tetris/Tetris.runs/synth_1/Main.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2492.969 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  9 02:02:54 2022...
