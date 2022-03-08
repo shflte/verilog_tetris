@@ -2,7 +2,7 @@
 
 * Tetris game implemented in verilog.
 
-![snapshot.JPeG](https://github.com/shflte/verilog_tetris/blob/master/img/snapshot.JPeG)
+![snapshot.JPeG](https://github.com/shflte/verilog_tetris/blob/master/img/snapshot.jpeg)
 
 ## Deploy
 
