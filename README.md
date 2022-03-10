@@ -1,6 +1,6 @@
 # Tetris
 
-<div style="text-align: center"><img src="https://github.com/shflte/verilog_tetris/blob/master/img/snapshot.jpeg" alt="thumbnail" style="display:inline-block"/></div>
+<img src="https://github.com/shflte/verilog_tetris/blob/master/img/snapshot.jpeg" alt="thumbnail" style="display:block; margin: 0 auto;"/>
 
 ## Deploy
 
