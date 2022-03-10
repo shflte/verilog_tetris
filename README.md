@@ -1,8 +1,6 @@
 # Tetris
 
-* Tetris game implemented in verilog.
-
-![snapshot.JPeG](https://github.com/shflte/verilog_tetris/blob/master/img/snapshot.jpeg)
+<div style="text-align: center"><img src="https://github.com/shflte/verilog_tetris/blob/master/img/snapshot.jpeg" alt="thumbnail" style="display:inline-block"/></div>
 
 ## Deploy
 
