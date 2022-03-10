@@ -2,7 +2,7 @@
 
 ​	<img src="https://github.com/shflte/verilog_tetris/blob/master/img/snapshot.jpeg" alt="thumbnail" style="display:block; margin: 0 auto;"/>
 
-[The demo video](https://www.youtube.com/watch?v=ooh9gNMcXPA&t=384s)
+[The demo video](https://www.youtube.com/watch?v=ooh9gNMcXPA)
 
 ## Deploy
 
